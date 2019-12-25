@@ -29,7 +29,7 @@ class Chat extends Component {
 
         // initialize local storage
         this.storage = new Storage();
-        const ENDPOINT = `localhost:6004`;
+        const ENDPOINT = `https://majachat.herokuapp.com/`;
         socket = io(ENDPOINT);
 
         this.listToMessage();
